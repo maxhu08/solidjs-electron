@@ -9,6 +9,9 @@ the solidjs code is in the app/ directory so make you're there for editing your 
 to get started install the dependencies in both the app and electron directories
 
 ```bash
+# clone template
+git clone https://github.com/maxhu08/solidjs-electron.git
+
 # installing app (solidjs) dependecies
 $: cd app
 $: npm install
