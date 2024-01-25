@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "e": "electron src/main.js"
+    "start:dev": "electron src/main.js --mode=dev",
+    "start:prod": "electron src/main.js"
   },
   "keywords": [],
   "author": "",

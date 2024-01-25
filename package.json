@@ -1,0 +1,12 @@
+{
+  "name": "solidjs-electron",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "concurrently \"cd app && npm run dev\" \"cd electron && npm run start:dev\"",
+    "start": "cd electron && npm run start:prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

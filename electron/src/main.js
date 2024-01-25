@@ -5,15 +5,23 @@ import path, { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const isDev = process.argv.includes("--mode=dev");
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
-    height: 600
+    height: 600,
+    alwaysOnTop: true // keeps the window always focused
   });
 
-  win.loadFile(path.join(__dirname, "../../solidjs_dist/index.html"));
-
-  win.webContents.openDevTools();
+  if (isDev) {
+    // load localhost:3000 during development
+    win.loadURL("http://localhost:3000");
+    win.webContents.openDevTools();
+  } else {
+    // load index.html in production
+    win.loadFile(path.join(__dirname, "../../solidjs_dist/index.html"));
+  }
 };
 
 app.whenReady().then(() => {
