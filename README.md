@@ -13,15 +13,15 @@ to get started install the dependencies in both the app and electron directories
 git clone https://github.com/maxhu08/solidjs-electron.git
 
 # installing app (solidjs) dependecies
-$: cd app
-$: npm install
+cd app
+npm install
 
 # installing electron dependecies
-$: cd ../electron
-$: npm install
+cd ../electron
+npm install
 
 # delete git info so you can add your own repo
-$: rm -rf .git
+rm -rf .git
 ```
 
 then start the development server (make sure you're in the top dir)
