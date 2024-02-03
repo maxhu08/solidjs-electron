@@ -12,6 +12,9 @@ to get started install the dependencies in both the app and electron directories
 # clone template
 git clone https://github.com/maxhu08/solidjs-electron.git
 
+# cd
+cd solidjs-electron
+
 # installing app (solidjs) dependecies
 cd app
 npm install
