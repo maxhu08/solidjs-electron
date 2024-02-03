@@ -19,6 +19,9 @@ $: npm install
 # installing electron dependecies
 $: cd ../electron
 $: npm install
+
+# delete git info so you can add your own repo
+$: rm -rf .git
 ```
 
 then start the development server (make sure you're in the top dir)
